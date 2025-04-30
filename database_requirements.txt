@@ -1,0 +1,28 @@
+
+Database: MySQL (Relational Database)
+
+Required Queries:
+
+1. Create Database (If Not Exists)
+   Query:
+   CREATE DATABASE IF NOT EXISTS pianoUsers;
+
+2. Create Table for Users (If Not Exists)
+   Query:
+   CREATE TABLE IF NOT EXISTS users (
+       UserName varchar(50),
+       Email varchar(50),
+       Number integer(50),
+       Password varchar(25)
+   );
+
+3. Insert New User (For Signup)
+   Query:
+   INSERT INTO users (UserName, Email, Number, Password) 
+   VALUES ('$username', '$email', '$number', '$pwd');
+
+4. Select User (For Login)
+   Query:
+   SELECT * FROM users WHERE UserName='$username';
+
+Note: This is a simple database, we didn't focus on constraints or anything else. If you want, you can add and enhance the design.
